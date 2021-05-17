@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <style name="AppNoActionBarTheme" parent="Theme.Cyanea.Light.NoActionBar">
+        <item name="preferenceIconColor">?android:attr/textColorPrimary</item>
+        <item name="myMenuIconColor">?attr/menuIconColor</item>
+        <item name="preferenceTheme">@style/MyPreferenceStyle</item>
+    </style>
+
+    <style name="MyPreferenceStyle" parent="@style/PreferenceThemeOverlay.v14.Material">
+        <item name="preferenceCategoryStyle">@style/MyPreferenceCategoryStyle</item>
+    </style>
+
+    <style name="MyPreferenceCategoryStyle" parent="@style/Preference.Category.Material">
+        <item name="android:layout" tools:ignore="PrivateResource">@layout/preference_category</item>
+    </style>
+</resources>

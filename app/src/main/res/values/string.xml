@@ -1,0 +1,331 @@
+<resources>
+    <string name="app_name">皮皮虾助手</string>
+    <string name="channel_title">管理频道</string>
+    <string name="xposed_description">清风深知杨柳意，啤酒龙虾再相聚</string>
+    <string name="pref_save_image">pref_save_image</string>
+    <string name="pref_save_video">pref_save_video</string>
+    <string name="pref_remove_ads">pref_remove_ads</string>
+    <string name="pref_remove_red_dots">pref_remove_red_dots</string>
+    <string name="pref_remove_stories">pref_remove_stories</string>
+    <string name="pref_disable_update">pref_disable_update</string>
+    <string name="pref_remove_teenager_mode_dialog">pref_remove_teenager_mode_dialog</string>
+    <string name="pref_simplify_share">pref_simplify_share</string>
+    <string name="pref_use_new_feed_footer_style">pref_use_new_feed_footer_style</string>
+    <string name="pref_remove_comment">pref_remove_comment</string>
+    <string name="pref_remove_comment_keywords">pref_remove_comment_keywords</string>
+    <string name="pref_remove_comment_users">pref_remove_comment_users</string>
+    <string name="pref_remove_avatar_decoration">pref_remove_avatar_decoration</string>
+    <string name="pref_disable_history_items">pref_disable_history_items</string>
+    <string name="pref_diy_category_list">pref_diy_category_list</string>
+    <string name="pref_remove_restrictions">pref_remove_restrictions</string>
+    <string name="pref_show_register_escape_time">pref_show_register_escape_time</string>
+    <string name="pref_save_audio">pref_save_audio</string>
+    <string name="pref_copy_item">pref_copy_item</string>
+    <string name="pref_unlock_illegal_word">pref_unlock_illegal_word</string>
+    <string name="pref_unlock_danmaku">pref_unlock_danmaku</string>
+    <string name="pref_unlock_1080p_limit">pref_unlock_1080p_limit</string>
+    <string name="pref_unlock_emoji_limit">pref_unlock_emoji_limit</string>
+    <string name="pref_unlock_send_god_limit">pref_unlock_send_god_limit</string>
+    <string name="pref_unlock_video_comment_limit">pref_unlock_video_comment_limit</string>
+    <string name="pref_prevent_mistaken_touch">pref_prevent_mistaken_touch</string>
+    <string name="pref_show_female_tip">pref_show_female_tip</string>
+    <string name="pref_show_exact_comment_time">pref_show_exact_comment_time</string>
+    <string name="pref_show_today_comment_time_format">pref_show_today_comment_time_format</string>
+    <string name="pref_show_exact_comment_time_format">pref_show_exact_comment_time_format</string>
+    <string name="pref_keep_video_play_speed">pref_keep_video_play_speed</string>
+    <string name="pref_set_video_play_speed">pref_set_video_play_speed</string>
+    <string name="pref_auto_browse_enable">pref_auto_browse_enable</string>
+    <string name="pref_auto_browse_frequency">pref_auto_browse_frequency</string>
+    <string name="pref_auto_browse_video_mode">pref_auto_browse_video_mode</string>
+    <string name="pref_auto_digg_enable">pref_auto_digg_enable</string>
+    <string name="pref_digg_style">pref_digg_style</string>
+    <string name="pref_auto_digg_pause">pref_auto_digg_pause</string>
+    <string name="pref_auto_comment_enable">pref_auto_comment_enable</string>
+    <string name="pref_auto_comment_text">pref_auto_comment_text</string>
+    <string name="pref_auto_comment_pause">pref_auto_comment_pause</string>
+    <string name="pref_auto_ward_enable">pref_auto_ward_enable</string>
+    <string name="pref_auto_ward_condition">pref_auto_ward_condition</string>
+    <string name="pref_auto_send_god_enable">pref_auto_send_god_enable</string>
+    <string name="pref_auto_send_god_time_limit">pref_auto_send_god_time_limit</string>
+    <string name="pref_modify_share_counts">pref_modify_share_counts</string>
+    <string name="pref_remove_bottom_view">pref_remove_bottom_view</string>
+    <string name="pref_remove_publish_button">pref_remove_publish_button</string>
+    <string name="pref_remove_detail_bottom_view">pref_remove_detail_bottom_view</string>
+    <string name="pref_diy_enable">pref_diy_enable</string>
+    <string name="pref_modify_message_counts">pref_modify_message_counts</string>
+    <string name="pref_user_name">pref_user_name</string>
+    <string name="pref_punish_enable">pref_punish_enable</string>
+    <string name="pref_certify_type">pref_certify_type</string>
+    <string name="pref_certify_desc">pref_certify_desc</string>
+    <string name="pref_description">pref_description</string>
+    <string name="pref_like_count">pref_like_count</string>
+    <string name="pref_followers_count">pref_followers_count</string>
+    <string name="pref_following_count">pref_following_count</string>
+    <string name="pref_point">pref_point</string>
+    <string name="pref_about">pref_about</string>
+    <string name="pref_donate_by_alipay">pref_donate_by_alipay</string>
+    <string name="pref_join_qq_group">pref_join_qq_group</string>
+    <string name="pref_hide_launcher_icon">pref_hide_launcher_icon</string>
+    <string name="pref_source_code">pref_source_code</string>
+    <string name="edit">编辑</string>
+    <string name="finish">完成</string>
+    <string name="tip_drag">单击设置默认频道，拖拽排序</string>
+    <string name="my_channel">我的频道</string>
+    <string name="other_channel">其他频道</string>
+    <string name="reset">重置</string>
+
+    <string name="pref_purify_title">净化功能</string>
+    <string name="pref_save_image_title">图片去水印</string>
+    <string name="pref_save_image_summary">图片/动图无损保存</string>
+    <string name="pref_save_video_title">视频去水印</string>
+    <string name="pref_save_video_summary">下载链接重解析为播放链接</string>
+    <string name="pref_remove_ads_title">去除广告</string>
+    <string name="pref_remove_ads_summary">去除启动页/帖子/评论/小程序等广告</string>
+    <string name="pref_remove_red_dots_title">去除红点</string>
+    <string name="pref_remove_red_dots_summary">去除关注频道/底栏/插眼红点</string>
+    <string name="pref_remove_stories_title">去除头像列表</string>
+    <string name="pref_remove_stories_summary">去除推荐/关注频道下方头像列表</string>
+    <string name="pref_disable_update_title">屏蔽更新</string>
+    <string name="pref_disable_update_summary">不显示更新提示/禁用自动更新</string>
+    <string name="pref_remove_teenager_mode_dialog_title">关闭青少年模式弹窗</string>
+    <string name="pref_remove_teenager_mode_dialog_summary">仍可从设置中进入青少年模式</string>
+    <string name="pref_simplify_share_title">精简分享</string>
+    <string name="pref_simplify_share_summary">移除分享到QQ/QQ空间/微信/朋友圈</string>
+    <string name="pref_use_new_feed_footer_style_title">帖子页脚使用新布局</string>
+    <string name="pref_use_new_feed_footer_style_summary">分享、评论、赞、踩</string>
+    <string name="pref_remove_comment_title">屏蔽评论（以|分割，支持正则表达式）</string>
+    <string name="pref_remove_comment_summary">依据关键词/用户名屏蔽评论</string>
+    <string name="pref_remove_comment_keywords_title">关键词</string>
+    <string name="pref_remove_comment_users_title">用户名</string>
+    <string name="pref_remove_avatar_decoration_title">屏蔽头像挂饰</string>
+    <string name="pref_remove_avatar_decoration_summary">移除花里胡哨的活动挂饰</string>
+    <string name="pref_disable_history_items_title">关闭浏览历史记录</string>
+    <string name="pref_disable_history_items_summary">不再记录浏览历史</string>
+    <string name="pref_diy_category_list_title">管理频道</string>
+    <string name="pref_diy_category_list_summary">自定义头部版块</string>
+
+    <string name="pref_assist_title">辅助功能</string>
+    <string name="pref_remove_restrictions_title">解除下载限制</string>
+    <string name="pref_remove_restrictions_summary">解除无法保存/视频不显示下载按钮的限制</string>
+    <string name="pref_show_register_escape_time_title">个人主页显示注册/出黑屋时间</string>
+    <string name="pref_show_register_escape_time_summary">点击主页时间将复制到剪贴板</string>
+    <string name="pref_save_audio_title">保存音频</string>
+    <string name="pref_save_audio_summary">分享->保存音频</string>
+    <string name="pref_copy_item_title">复制文字</string>
+    <string name="pref_copy_item_summary">分享->复制文字</string>
+    <string name="pref_unlock_illegal_word_title">解锁屏蔽词</string>
+    <string name="pref_unlock_illegal_word_summary">允许使用被和谐词语(如🐂🍺等)</string>
+    <string name="pref_unlock_danmaku_title">解锁高级弹幕特权</string>
+    <string name="pref_unlock_danmaku_summary">允许使用彩色弹幕、置顶/置底弹幕</string>
+    <string name="pref_unlock_1080p_limit_title">解除发帖1080P限制</string>
+    <string name="pref_unlock_1080p_limit_summary">发帖时支持1080P以上的视频</string>
+    <string name="pref_unlock_emoji_limit_title">解除收藏表情数限制</string>
+    <string name="pref_unlock_emoji_limit_summary">支持收藏更多的表情(≥175)</string>
+    <string name="pref_unlock_send_god_limit_title">解除神评已送满限制</string>
+    <string name="pref_unlock_send_god_limit_summary">已送满的评论会自动点赞</string>
+    <string name="pref_unlock_video_comment_limit_title">解除楼中楼视频限制</string>
+    <string name="pref_unlock_video_comment_limit_summary">楼中楼可以评论视频</string>
+    <string name="pref_prevent_mistaken_touch_title">划视频防误触</string>
+    <string name="pref_prevent_mistaken_touch_summary">左右划视频时不会触发快进快退</string>
+    <string name="pref_show_female_tip_title">开启母虾提示</string>
+    <string name="pref_show_female_tip_summary">评论区的母虾名字显示为粉色</string>
+    <string name="pref_show_exact_comment_time_title">显示评论具体时间</string>
+    <string name="pref_show_today_comment_time_format_title">当天时间格式</string>
+    <string name="pref_show_exact_comment_time_format_title">之前时间格式</string>
+    <string name="pref_keep_video_play_speed_title">长按视频保持加速</string>
+    <string name="pref_keep_video_play_speed_summary">再次长按取消加速</string>
+    <string name="pref_set_video_play_speed_title">长按视频倍速</string>
+    <string name="pref_set_video_play_speed_summary">%s</string>
+
+    <string name="pref_auto_title">自动化功能（对详情页帖子生效）</string>
+    <string name="pref_auto_browse_enable_title">自动切换下一条</string>
+    <string name="pref_auto_browse_frequency_title">频率设置(ms)</string>
+    <string name="pref_auto_browse_video_mode_title">视频播放完再切换</string>
+    <string name="pref_auto_digg_enable_title">自动点赞</string>
+    <string name="pref_auto_digg_enable_summary">自动切换时赞成功不显示（实际已赞）</string>
+    <string name="pref_digg_style_title">点赞样式</string>
+    <string name="pref_digg_style_summary">%s</string>
+    <string name="pref_auto_digg_pause_title">点赞频繁后暂停自动切换</string>
+    <string name="pref_auto_comment_enable_title">自动评论</string>
+    <string name="pref_auto_comment_text_title">评论内容</string>
+    <string name="pref_auto_comment_pause_title">评论频繁后暂停自动切换</string>
+    <string name="pref_auto_ward_enable_title">自动插眼</string>
+    <string name="pref_auto_ward_condition_title">插眼条件</string>
+    <string name="pref_auto_ward_condition_summary">%s</string>
+    <string name="pref_auto_send_god_enable_title">自动为已送满的评论送神</string>
+    <string name="pref_auto_send_god_enable_summary">对评论生效</string>
+    <string name="pref_auto_send_god_time_limit_title">限定评论时间</string>
+    <string name="pref_auto_send_god_time_limit_summary">%s</string>
+    <string name="pref_modify_share_counts_title">自动刷转发次数</string>
+    <string name="pref_modify_share_counts_summary">转发一次后转发次数+100（每日上限）</string>
+
+    <string name="pref_avoid_burning_screen_title">防烧屏</string>
+    <string name="pref_remove_bottom_view_title">去除底栏</string>
+    <string name="pref_remove_publish_button_title">去除发布按钮</string>
+    <string name="pref_remove_detail_bottom_view_title">去除评论页底栏</string>
+
+    <string name="pref_fun_title">娱乐功能</string>
+    <string name="pref_diy_enable_title">开启自定义</string>
+    <string name="pref_modify_message_counts_title">消息99+</string>
+    <string name="pref_punish_enable_title">进小黑屋</string>
+    <string name="pref_certify_type_title">认证类型</string>
+    <string name="pref_certify_type_summary">%s</string>
+    <string name="pref_certify_desc_title">认证描述</string>
+    <string name="pref_user_name_title">用户名</string>
+    <string name="pref_description_title">个性签名</string>
+    <string name="pref_like_count_title">获赞</string>
+    <string name="pref_followers_count_title">粉丝</string>
+    <string name="pref_following_count_title">关注</string>
+    <string name="pref_point_title">积分</string>
+
+    <string name="pref_about_title">关于</string>
+    <string name="pref_about_author_title">开发组</string>
+    <string name="pref_about_author_summary">阿卡林、污帝多么寂寞（UI）</string>
+    <string name="pref_donate_by_alipay_title">支付宝捐赠</string>
+    <string name="pref_donate_by_alipay_summary">我很可爱，请给我钱～</string>
+    <string name="pref_join_qq_group_title">聊天&amp;反馈&amp;提建议</string>
+    <string name="pref_join_qq_group_summary">QQ群：521286352</string>
+    <string name="pref_hide_launcher_icon_title">隐藏图标</string>
+    <string name="pref_hide_launcher_icon_summary">隐藏后从模块列表启动</string>
+    <string name="pref_source_code_title">项目源码</string>
+    <string name="pref_source_code_summary"><![CDATA[才，才不是想要你的Star呢！<(｀^´)>]]></string>
+
+    <string-array name="play_speed">
+        <item>@string/play_speed_0</item>
+        <item>@string/play_speed_1</item>
+        <item>@string/play_speed_2</item>
+        <item>@string/play_speed_3</item>
+        <item>@string/play_speed_4</item>
+        <item>@string/play_speed_5</item>
+        <item>@string/play_speed_6</item>
+        <item>@string/play_speed_7</item>
+        <item>@string/play_speed_8</item>
+        <item>@string/play_speed_9</item>
+        <item>@string/play_speed_10</item>
+    </string-array>
+
+    <string name="play_speed_0">0.1X</string>
+    <string name="play_speed_1">0.25X</string>
+    <string name="play_speed_2">0.5X</string>
+    <string name="play_speed_3">0.75X</string>
+    <string name="play_speed_4">1.0X</string>
+    <string name="play_speed_5">1.25X</string>
+    <string name="play_speed_6">1.5X</string>
+    <string name="play_speed_7">1.75X</string>
+    <string name="play_speed_8">2.0X</string>
+    <string name="play_speed_9">2.5X</string>
+    <string name="play_speed_10">3.0X</string>
+
+    <string-array name="play_speed_values">
+        <item>0.1</item>
+        <item>0.25</item>
+        <item>0.5</item>
+        <item>0.75</item>
+        <item>1.0</item>
+        <item>1.25</item>
+        <item>1.5</item>
+        <item>1.75</item>
+        <item>2.0</item>
+        <item>2.5</item>
+        <item>3.0</item>
+    </string-array>
+
+    <string-array name="digg_style">
+        <item>@string/digg_style_0</item>
+        <item>@string/digg_style_1</item>
+        <item>@string/digg_style_2</item>
+        <item>@string/digg_style_3</item>
+        <item>@string/digg_style_4</item>
+    </string-array>
+
+    <string name="digg_style_0">默认</string>
+    <string name="digg_style_1">沙雕</string>
+    <string name="digg_style_2">握草</string>
+    <string name="digg_style_3">刺激</string>
+    <string name="digg_style_4">感动</string>
+
+    <string-array name="digg_style_values">
+        <item>10</item>
+        <item>50</item>
+        <item>40</item>
+        <item>20</item>
+        <item>30</item>
+    </string-array>
+
+    <string-array name="auto_ward_condition">
+        <item>@string/auto_ward_condition_0</item>
+        <item>@string/auto_ward_condition_1</item>
+        <item>@string/auto_ward_condition_2</item>
+    </string-array>
+
+    <string name="auto_ward_condition_0">为帖子点赞时</string>
+    <string name="auto_ward_condition_1">为帖子评论时</string>
+    <string name="auto_ward_condition_2">为评论送神时</string>
+
+    <string-array name="auto_ward_condition_values">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </string-array>
+
+    <string-array name="send_god_time_limit">
+        <item>@string/send_god_time_limit_0</item>
+        <item>@string/send_god_time_limit_1</item>
+        <item>@string/send_god_time_limit_2</item>
+        <item>@string/send_god_time_limit_3</item>
+        <item>@string/send_god_time_limit_4</item>
+        <item>@string/send_god_time_limit_5</item>
+        <item>@string/send_god_time_limit_6</item>
+        <item>@string/send_god_time_limit_7</item>
+        <item>@string/send_god_time_limit_8</item>
+        <item>@string/send_god_time_limit_9</item>
+        <item>@string/send_god_time_limit_10</item>
+    </string-array>
+
+    <string name="send_god_time_limit_0">半小时内</string>
+    <string name="send_god_time_limit_1">1小时内</string>
+    <string name="send_god_time_limit_2">6小时内</string>
+    <string name="send_god_time_limit_3">12小时内</string>
+    <string name="send_god_time_limit_4">一天内</string>
+    <string name="send_god_time_limit_5">三天内</string>
+    <string name="send_god_time_limit_6">七天内</string>
+    <string name="send_god_time_limit_7">半个月内</string>
+    <string name="send_god_time_limit_8">一个月内</string>
+    <string name="send_god_time_limit_9">半年内</string>
+    <string name="send_god_time_limit_10">一年内</string>
+
+    <string-array name="send_god_time_limit_values">
+        <item>1800</item>
+        <item>3600</item>
+        <item>21600</item>
+        <item>43200</item>
+        <item>86400</item>
+        <item>259200</item>
+        <item>604800</item>
+        <item>1296000</item>
+        <item>2592000</item>
+        <item>15552000</item>
+        <item>31104000</item>
+    </string-array>
+
+    <string-array name="certify">
+        <item>@string/certify_0</item>
+        <item>@string/certify_1</item>
+        <item>@string/certify_2</item>
+        <item>@string/certify_3</item>
+    </string-array>
+
+    <string name="certify_0">无</string>
+    <string name="certify_1">黄V认证</string>
+    <string name="certify_2">官方认证</string>
+    <string name="certify_3">橙V认证</string>
+
+    <string-array name="certify_values">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </string-array>
+
+</resources>

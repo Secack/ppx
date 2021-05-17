@@ -1,0 +1,73 @@
+apply plugin: 'com.android.application'
+apply plugin: 'AndResGuard'
+
+buildscript {
+    repositories {
+        jcenter()
+        google()
+    }
+    dependencies {
+        classpath 'com.tencent.mm:AndResGuard-gradle-plugin:1.2.21'
+    }
+}
+
+android {
+    compileSdkVersion 29
+
+    defaultConfig {
+        applicationId "com.akari.ppx"
+        minSdkVersion 21
+        targetSdkVersion 27
+        versionCode 173
+        versionName '1.7.3'
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled true
+            zipAlignEnabled true
+            shrinkResources true
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation "androidx.preference:preference:1.1.1"
+    implementation "androidx.constraintlayout:constraintlayout:2.0.4"
+    implementation 'androidx.recyclerview:recyclerview:1.1.0'
+    implementation "com.jaredrummler:cyanea:1.0.2"
+    implementation 'com.google.code.gson:gson:2.8.6'
+    implementation 'com.googlecode.mp4parser:isoparser:1.1.22'
+    compileOnly 'de.robv.android.xposed:api:82'
+    compileOnly 'de.robv.android.xposed:api:82:sources'
+}
+
+andResGuard {
+    mappingFile = null
+    use7zip = true
+    useSign = true
+    keepRoot = false
+    fixedResName = "arg"
+    mergeDuplicatedRes = true
+    whiteList = [
+            "R.drawable.icon",
+    ]
+    compressFilePattern = [
+            "*.png",
+            "*.jpg",
+            "*.jpeg",
+            "*.gif",
+    ]
+    sevenzip {
+        artifact = 'com.tencent.mm:SevenZip:1.2.21'
+    }
+}

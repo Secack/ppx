@@ -1,0 +1,369 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory android:title="@string/pref_purify_title">
+        <SwitchPreference
+            android:defaultValue="false"
+            android:key="@string/pref_save_image"
+            android:summary="@string/pref_save_image_summary"
+            android:title="@string/pref_save_image_title" />
+        <SwitchPreference
+            android:defaultValue="false"
+            android:key="@string/pref_save_video"
+            android:summary="@string/pref_save_video_summary"
+            android:title="@string/pref_save_video_title" />
+        <SwitchPreference
+            android:defaultValue="false"
+            android:key="@string/pref_remove_ads"
+            android:summary="@string/pref_remove_ads_summary"
+            android:title="@string/pref_remove_ads_title" />
+        <SwitchPreference
+            android:defaultValue="false"
+            android:key="@string/pref_remove_red_dots"
+            android:summary="@string/pref_remove_red_dots_summary"
+            android:title="@string/pref_remove_red_dots_title" />
+        <SwitchPreference
+            android:defaultValue="false"
+            android:key="@string/pref_remove_stories"
+            android:summary="@string/pref_remove_stories_summary"
+            android:title="@string/pref_remove_stories_title" />
+        <SwitchPreference
+            android:defaultValue="false"
+            android:key="@string/pref_disable_update"
+            android:summary="@string/pref_disable_update_summary"
+            android:title="@string/pref_disable_update_title" />
+        <SwitchPreference
+            android:defaultValue="false"
+            android:key="@string/pref_remove_teenager_mode_dialog"
+            android:summary="@string/pref_remove_teenager_mode_dialog_summary"
+            android:title="@string/pref_remove_teenager_mode_dialog_title" />
+        <SwitchPreference
+            android:defaultValue="false"
+            android:key="@string/pref_simplify_share"
+            android:summary="@string/pref_simplify_share_summary"
+            android:title="@string/pref_simplify_share_title" />
+        <SwitchPreference
+            android:defaultValue="false"
+            android:key="@string/pref_use_new_feed_footer_style"
+            android:summary="@string/pref_use_new_feed_footer_style_summary"
+            android:title="@string/pref_use_new_feed_footer_style_title" />
+        <SwitchPreference
+            android:defaultValue="false"
+            android:key="@string/pref_remove_comment"
+            android:summary="@string/pref_remove_comment_summary"
+            android:title="@string/pref_remove_comment_title" />
+        <com.akari.ppx.common.preference.NeutralEditPreference
+            android:defaultValue=".*送了.*|.*送|.*神了.*|.*送神.*|.*啃了.*|.*啃|.*肯|.*赌.*神|试试|刷|冲|.*至尊.*|.*💎.*|尊|金|银|铜|青铜.*|，|。|、|"
+            android:dependency="@string/pref_remove_comment"
+            android:key="@string/pref_remove_comment_keywords"
+            android:negativeButtonText="@string/reset"
+            android:title="@string/pref_remove_comment_keywords_title" />
+        <com.akari.ppx.common.preference.NeutralEditPreference
+            android:defaultValue="至尊军团.*|散仙阁.*|神评学院.*|"
+            android:dependency="@string/pref_remove_comment"
+            android:key="@string/pref_remove_comment_users"
+            android:negativeButtonText="@string/reset"
+            android:title="@string/pref_remove_comment_users_title" />
+        <SwitchPreference
+            android:defaultValue="false"
+            android:key="@string/pref_remove_avatar_decoration"
+            android:summary="@string/pref_remove_avatar_decoration_summary"
+            android:title="@string/pref_remove_avatar_decoration_title" />
+        <SwitchPreference
+            android:defaultValue="false"
+            android:key="@string/pref_disable_history_items"
+            android:summary="@string/pref_disable_history_items_summary"
+            android:title="@string/pref_disable_history_items_title" />
+        <SwitchPreference
+            android:defaultValue="false"
+            android:key="@string/pref_diy_category_list"
+            android:summary="@string/pref_diy_category_list_summary"
+            android:title="@string/pref_diy_category_list_title" />
+    </PreferenceCategory>
+
+    <PreferenceCategory android:title="@string/pref_assist_title">
+        <SwitchPreference
+            android:defaultValue="false"
+            android:key="@string/pref_remove_restrictions"
+            android:summary="@string/pref_remove_restrictions_summary"
+            android:title="@string/pref_remove_restrictions_title" />
+        <SwitchPreference
+            android:defaultValue="false"
+            android:key="@string/pref_show_register_escape_time"
+            android:summary="@string/pref_show_register_escape_time_summary"
+            android:title="@string/pref_show_register_escape_time_title" />
+        <SwitchPreference
+            android:defaultValue="false"
+            android:key="@string/pref_save_audio"
+            android:summary="@string/pref_save_audio_summary"
+            android:title="@string/pref_save_audio_title" />
+        <SwitchPreference
+            android:defaultValue="false"
+            android:key="@string/pref_copy_item"
+            android:summary="@string/pref_copy_item_summary"
+            android:title="@string/pref_copy_item_title" />
+        <SwitchPreference
+            android:defaultValue="false"
+            android:key="@string/pref_unlock_illegal_word"
+            android:summary="@string/pref_unlock_illegal_word_summary"
+            android:title="@string/pref_unlock_illegal_word_title" />
+        <SwitchPreference
+            android:defaultValue="false"
+            android:key="@string/pref_unlock_danmaku"
+            android:summary="@string/pref_unlock_danmaku_summary"
+            android:title="@string/pref_unlock_danmaku_title" />
+        <SwitchPreference
+            android:defaultValue="false"
+            android:key="@string/pref_unlock_1080p_limit"
+            android:summary="@string/pref_unlock_1080p_limit_summary"
+            android:title="@string/pref_unlock_1080p_limit_title" />
+        <SwitchPreference
+            android:defaultValue="false"
+            android:key="@string/pref_unlock_1080p_limit"
+            android:summary="@string/pref_unlock_emoji_limit_summary"
+            android:title="@string/pref_unlock_emoji_limit_title" />
+        <SwitchPreference
+            android:defaultValue="false"
+            android:key="@string/pref_unlock_send_god_limit"
+            android:summary="@string/pref_unlock_send_god_limit_summary"
+            android:title="@string/pref_unlock_send_god_limit_title" />
+        <SwitchPreference
+            android:defaultValue="false"
+            android:key="@string/pref_unlock_video_comment_limit"
+            android:summary="@string/pref_unlock_video_comment_limit_summary"
+            android:title="@string/pref_unlock_video_comment_limit_title" />
+        <SwitchPreference
+            android:defaultValue="false"
+            android:key="@string/pref_prevent_mistaken_touch"
+            android:summary="@string/pref_prevent_mistaken_touch_summary"
+            android:title="@string/pref_prevent_mistaken_touch_title" />
+        <SwitchPreference
+            android:defaultValue="false"
+            android:key="@string/pref_show_female_tip"
+            android:summary="@string/pref_show_female_tip_summary"
+            android:title="@string/pref_show_female_tip_title" />
+        <SwitchPreference
+            android:defaultValue="false"
+            android:key="@string/pref_show_exact_comment_time"
+            android:title="@string/pref_show_exact_comment_time_title" />
+        <com.akari.ppx.common.preference.NeutralEditPreference
+            android:defaultValue="今天HH点mm分ss秒"
+            android:dependency="@string/pref_show_exact_comment_time"
+            android:key="@string/pref_show_today_comment_time_format"
+            android:negativeButtonText="@string/reset"
+            android:title="@string/pref_show_today_comment_time_format_title" />
+        <com.akari.ppx.common.preference.NeutralEditPreference
+            android:defaultValue="yyyy-MM-dd HH:mm:ss"
+            android:dependency="@string/pref_show_exact_comment_time"
+            android:key="@string/pref_show_exact_comment_time_format"
+            android:negativeButtonText="@string/reset"
+            android:title="@string/pref_show_exact_comment_time_format_title" />
+        <SwitchPreference
+            android:defaultValue="false"
+            android:key="@string/pref_keep_video_play_speed"
+            android:summary="@string/pref_keep_video_play_speed_summary"
+            android:title="@string/pref_keep_video_play_speed_title" />
+        <ListPreference
+            android:defaultValue="2.0"
+            android:entries='@array/play_speed'
+            android:entryValues="@array/play_speed_values"
+            android:key="@string/pref_set_video_play_speed"
+            android:summary="@string/pref_set_video_play_speed_summary"
+            android:title="@string/pref_set_video_play_speed_title" />
+    </PreferenceCategory>
+
+    <PreferenceCategory android:title="@string/pref_auto_title">
+        <SwitchPreference
+            android:defaultValue="false"
+            android:key="@string/pref_auto_browse_enable"
+            android:title="@string/pref_auto_browse_enable_title" />
+        <com.akari.ppx.common.preference.EditPreference
+            android:defaultValue="3000"
+            android:dependency="@string/pref_auto_browse_enable"
+            android:key="@string/pref_auto_browse_frequency"
+            android:negativeButtonText="@string/reset"
+            android:title="@string/pref_auto_browse_frequency_title" />
+        <SwitchPreference
+            android:defaultValue="true"
+            android:dependency="@string/pref_auto_browse_enable"
+            android:key="@string/pref_auto_browse_video_mode"
+            android:title="@string/pref_auto_browse_video_mode_title" />
+        <SwitchPreference
+            android:defaultValue="false"
+            android:key="@string/pref_auto_digg_enable"
+            android:summary="@string/pref_auto_digg_enable_summary"
+            android:title="@string/pref_auto_digg_enable_title" />
+        <ListPreference
+            android:defaultValue="10"
+            android:dependency="@string/pref_auto_digg_enable"
+            android:entries='@array/digg_style'
+            android:entryValues="@array/digg_style_values"
+            android:key="@string/pref_digg_style"
+            android:summary="@string/pref_digg_style_summary"
+            android:title="@string/pref_digg_style_title" />
+        <SwitchPreference
+            android:defaultValue="true"
+            android:dependency="@string/pref_auto_digg_enable"
+            android:key="@string/pref_auto_digg_pause"
+            android:title="@string/pref_auto_digg_pause_title" />
+        <SwitchPreference
+            android:defaultValue="false"
+            android:key="@string/pref_auto_comment_enable"
+            android:title="@string/pref_auto_comment_enable_title" />
+        <com.akari.ppx.common.preference.EditPreference
+            android:defaultValue=""
+            android:dependency="@string/pref_auto_comment_enable"
+            android:key="@string/pref_auto_comment_text"
+            android:negativeButtonText="@string/reset"
+            android:title="@string/pref_auto_comment_text_title" />
+        <SwitchPreference
+            android:defaultValue="true"
+            android:dependency="@string/pref_auto_comment_enable"
+            android:key="@string/pref_auto_comment_pause"
+            android:title="@string/pref_auto_comment_pause_title" />
+        <SwitchPreference
+            android:defaultValue="false"
+            android:key="@string/pref_auto_ward_enable"
+            android:title="@string/pref_auto_ward_enable_title" />
+        <ListPreference
+            android:defaultValue="0"
+            android:dependency="@string/pref_auto_ward_enable"
+            android:entries='@array/auto_ward_condition'
+            android:entryValues="@array/auto_ward_condition_values"
+            android:key="@string/pref_auto_ward_condition"
+            android:summary="@string/pref_auto_ward_condition_summary"
+            android:title="@string/pref_auto_ward_condition_title" />
+        <SwitchPreference
+            android:defaultValue="false"
+            android:dependency="@string/pref_unlock_send_god_limit"
+            android:key="@string/pref_auto_send_god_enable"
+            android:summary="@string/pref_auto_send_god_enable_summary"
+            android:title="@string/pref_auto_send_god_enable_title" />
+        <ListPreference
+            android:defaultValue="86400"
+            android:dependency="@string/pref_auto_send_god_enable"
+            android:entries='@array/send_god_time_limit'
+            android:entryValues="@array/send_god_time_limit_values"
+            android:key="@string/pref_auto_send_god_time_limit"
+            android:summary="@string/pref_auto_send_god_time_limit_summary"
+            android:title="@string/pref_auto_send_god_time_limit_title" />
+        <SwitchPreference
+            android:defaultValue="false"
+            android:key="@string/pref_modify_share_counts"
+            android:summary="@string/pref_modify_share_counts_summary"
+            android:title="@string/pref_modify_share_counts_title" />
+    </PreferenceCategory>
+
+    <PreferenceCategory android:title="@string/pref_avoid_burning_screen_title">
+        <SwitchPreference
+            android:defaultValue="false"
+            android:disableDependentsState="true"
+            android:key="@string/pref_remove_bottom_view"
+            android:title="@string/pref_remove_bottom_view_title" />
+        <SwitchPreference
+            android:defaultValue="false"
+            android:dependency="@string/pref_remove_bottom_view"
+            android:key="@string/pref_remove_publish_button"
+            android:title="@string/pref_remove_publish_button_title" />
+        <SwitchPreference
+            android:defaultValue="false"
+            android:key="@string/pref_remove_detail_bottom_view"
+            android:title="@string/pref_remove_detail_bottom_view_title" />
+    </PreferenceCategory>
+
+    <PreferenceCategory android:title="@string/pref_fun_title">
+        <SwitchPreference
+            android:defaultValue="false"
+            android:key="@string/pref_diy_enable"
+            android:title="@string/pref_diy_enable_title" />
+        <SwitchPreference
+            android:defaultValue="false"
+            android:dependency="@string/pref_diy_enable"
+            android:key="@string/pref_modify_message_counts"
+            android:title="@string/pref_modify_message_counts_title" />
+        <SwitchPreference
+            android:defaultValue="false"
+            android:dependency="@string/pref_diy_enable"
+            android:key="@string/pref_punish_enable"
+            android:title="@string/pref_punish_enable_title" />
+        <ListPreference
+            android:defaultValue="0"
+            android:dependency="@string/pref_diy_enable"
+            android:entries='@array/certify'
+            android:entryValues="@array/certify_values"
+            android:key="@string/pref_certify_type"
+            android:summary="@string/pref_certify_type_summary"
+            android:title="@string/pref_certify_type_title" />
+        <com.akari.ppx.common.preference.EditPreference
+            android:defaultValue=""
+            android:dependency="@string/pref_diy_enable"
+            android:key="@string/pref_certify_desc"
+            android:negativeButtonText="@string/reset"
+            android:title="@string/pref_certify_desc_title" />
+        <com.akari.ppx.common.preference.EditPreference
+            android:defaultValue=""
+            android:dependency="@string/pref_diy_enable"
+            android:key="@string/pref_user_name"
+            android:negativeButtonText="@string/reset"
+            android:title="@string/pref_user_name_title" />
+        <com.akari.ppx.common.preference.EditPreference
+            android:defaultValue=""
+            android:dependency="@string/pref_diy_enable"
+            android:key="@string/pref_description"
+            android:negativeButtonText="@string/reset"
+            android:title="@string/pref_description_title" />
+        <com.akari.ppx.common.preference.NeutralEditPreference
+            android:defaultValue=""
+            android:dependency="@string/pref_diy_enable"
+            android:key="@string/pref_like_count"
+            android:negativeButtonText="@string/reset"
+            android:title="@string/pref_like_count_title" />
+        <com.akari.ppx.common.preference.NeutralEditPreference
+            android:defaultValue=""
+            android:dependency="@string/pref_diy_enable"
+            android:key="@string/pref_followers_count"
+            android:negativeButtonText="@string/reset"
+            android:title="@string/pref_followers_count_title" />
+        <com.akari.ppx.common.preference.NeutralEditPreference
+            android:defaultValue=""
+            android:dependency="@string/pref_diy_enable"
+            android:key="@string/pref_following_count"
+            android:negativeButtonText="@string/reset"
+            android:title="@string/pref_following_count_title" />
+        <com.akari.ppx.common.preference.NeutralEditPreference
+            android:defaultValue=""
+            android:dependency="@string/pref_diy_enable"
+            android:key="@string/pref_point"
+            android:negativeButtonText="@string/reset"
+            android:title="@string/pref_point_title" />
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:key="@string/pref_about"
+        android:title="@string/pref_about_title">
+        <Preference
+            android:icon="@drawable/ic_info"
+            android:summary="@string/pref_about_author_summary"
+            android:title="@string/pref_about_author_title" />
+        <Preference
+            android:icon="@drawable/ic_alipay"
+            android:key="@string/pref_donate_by_alipay"
+            android:summary="@string/pref_donate_by_alipay_summary"
+            android:title="@string/pref_donate_by_alipay_title" />
+        <Preference
+            android:icon="@drawable/ic_qq_group"
+            android:key="@string/pref_join_qq_group"
+            android:summary="@string/pref_join_qq_group_summary"
+            android:title="@string/pref_join_qq_group_title" />
+        <SwitchPreference
+            android:defaultValue="false"
+            android:icon="@drawable/ic_hide"
+            android:key="@string/pref_hide_launcher_icon"
+            android:summary="@string/pref_hide_launcher_icon_summary"
+            android:title="@string/pref_hide_launcher_icon_title" />
+        <Preference
+            android:icon="@drawable/ic_source_code"
+            android:key="@string/pref_source_code"
+            android:summary="@string/pref_source_code_summary"
+            android:title="@string/pref_source_code_title" />
+    </PreferenceCategory>
+</PreferenceScreen>
