@@ -4,10 +4,9 @@
 
 ---
 
-旨在使皮皮虾变得更好用的多功能Xposed模块
+由于各种原因，皮皮虾助手选择停更。感谢各位皮友的支持，我们江湖再见。
 
 ## 支持以下功能
-
 - 无损保存图片
 - 无损保存视频
 - 去除启动页/帖子/评论/小程序等广告
@@ -52,11 +51,6 @@
 https://pipix.lanzoux.com/b02mul3yd
 
 https://repo.xposed.info/module/com.akari.ppx
-
-## 交流
-QQ群: [521286352](https://qm.qq.com/cgi-bin/qm/qr?k=rLPbj3XCthfKClV3p_9i_jn6ab3yU-EW&jump_from=webapi)
-
-Telegram: [@PPXChat](https://t.me/PPXChat)
 
 ## 许可
 [GNU General Public License v3.0](LICENSE)
