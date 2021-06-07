@@ -26,6 +26,9 @@ public class InnerOpenHook extends SuperbHook {
 			@Override
 			protected void afterHookedMethod(MethodHookParam param) {
 				ArrayList list = (ArrayList) param.getResult();
+				if(list.size() == 0){
+					return;
+				}
 				Object item = list.get(1);
 				callMethod(item, "setSchemaNeedLogin", Boolean.FALSE);
 				callMethod(item, "setTabName", "皮皮虾助手");

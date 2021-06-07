@@ -356,6 +356,11 @@
             android:key="@string/pref_donate_by_alipay_edit"
             android:summary="@string/pref_donate_by_alipay_summary_edit"
             android:title="@string/pref_donate_by_alipay_title_edit" />
+        <Preference
+            android:icon="@drawable/ic_source_code"
+            android:key="@string/pref_source_code_edit"
+            android:summary="@string/pref_source_code_summary_edit"
+            android:title="@string/pref_source_code_title" />
 
 
     </PreferenceCategory>

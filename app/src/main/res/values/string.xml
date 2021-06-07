@@ -69,6 +69,7 @@
     <string name="pref_join_qq_group">pref_join_qq_group</string>
     <string name="pref_hide_launcher_icon">pref_hide_launcher_icon</string>
     <string name="pref_source_code">pref_source_code</string>
+    <string name="pref_source_code_edit">pref_source_code_edit</string>
     <string name="edit">编辑</string>
     <string name="finish">完成</string>
     <string name="tip_drag">单击设置默认频道，拖拽排序</string>
@@ -195,12 +196,13 @@
     <string name="pref_about_author_summary">阿卡林、污帝多么寂寞（UI）</string>
     <string name="pref_donate_by_alipay_title">支付宝捐赠</string>
     <string name="pref_donate_by_alipay_summary">我很可爱，请给我钱～</string>
-    <string name="pref_join_qq_group_title">聊天&amp;反馈&amp;提建议</string>
+    <string name="pref_join_qq_group_title">聊天&amp;反馈&amp;提建议（已封禁）</string>
     <string name="pref_join_qq_group_summary">QQ群：521286352</string>
     <string name="pref_hide_launcher_icon_title">隐藏图标</string>
     <string name="pref_hide_launcher_icon_summary">隐藏后从模块列表启动</string>
     <string name="pref_source_code_title">项目源码</string>
     <string name="pref_source_code_summary"><![CDATA[才，才不是想要你的Star呢！<(｀^´)>]]></string>
+    <string name="pref_source_code_summary_edit">想要你的Star！</string>
 
     <string-array name="play_speed">
         <item>@string/play_speed_0</item>

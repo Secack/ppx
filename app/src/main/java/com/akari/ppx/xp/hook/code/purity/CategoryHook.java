@@ -88,7 +88,9 @@ public class CategoryHook extends SuperbHook {
 				return CATEGORY_LIST_TYPE[i];
 			}
 		});
-		hookMethod("com.sup.superb.feedui.view.FeedTabFragment$a", "c", int.class, new XC_MethodHook() {
+		//1.7.3 FeedTabFragment$a
+		//s1.7.4 FeedTabFragment$CategoryPagerAdapter
+		hookMethod("com.sup.superb.feedui.view.FeedTabFragment$CategoryPagerAdapter", "c", int.class, new XC_MethodHook() {
 			private int i = 0;
 
 			@Override

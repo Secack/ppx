@@ -121,10 +121,10 @@ public class Utils {
 		}
 	}
 
-	public static void showGitPage(Context context) {
+	public static void showGitPage(Context context,String uri) {
 		try {
 			Intent intent = new Intent(Intent.ACTION_VIEW);
-			intent.setData(Uri.parse(Const.GITHUB_URI));
+			intent.setData(Uri.parse(uri));
 			context.startActivity(intent);
 		} catch (Exception ignored) {
 		}

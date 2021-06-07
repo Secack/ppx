@@ -62,6 +62,7 @@ public class HomeFragment extends PreferenceFragmentCompat implements Preference
 		findPreference(Prefs.JOIN_QQ_GROUP).setOnPreferenceClickListener(this);
 		findPreference(Prefs.HIDE_LAUNCHER_ICON).setOnPreferenceChangeListener(this);
 		findPreference(Prefs.SOURCE_CODE).setOnPreferenceClickListener(this);
+		findPreference(Prefs.SOURCE_CODE_EDIT).setOnPreferenceClickListener(this);
 		listener = text -> Utils.showToast(getActivity(), Utils.ts2date(System.currentTimeMillis(), text, true));
 		setSummaryPlusButton(Prefs.TODAY_COMMENT_TIME_FORMAT, listener, false);
 		setSummaryPlusButton(Prefs.EXACT_COMMENT_TIME_FORMAT, listener, false);
@@ -90,7 +91,10 @@ public class HomeFragment extends PreferenceFragmentCompat implements Preference
 				Utils.joinQQGroup(context);
 				break;
 			case SOURCE_CODE:
-				Utils.showGitPage(context);
+				Utils.showGitPage(context,Const.GITHUB_URI);
+				break;
+			case SOURCE_CODE_EDIT:
+				Utils.showGitPage(context,Const.GITHUB_URI_EDIT);
 				break;
 			default:
 				return false;
