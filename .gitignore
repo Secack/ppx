@@ -84,3 +84,5 @@ app/signature.properties
 
 # vscode
 .vscode/*
+
+keystore/cer.jks
