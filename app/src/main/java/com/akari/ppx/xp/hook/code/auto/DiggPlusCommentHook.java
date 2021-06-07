@@ -30,7 +30,9 @@ public class DiggPlusCommentHook extends SuperbHook {
 		final int browseFrequency = XSP.getI(AUTO_BROWSE_FREQUENCY, 2000), diggStyle = XSP.getI(DIGG_STYLE, 10);
 		final String commentText = XSP.gets(AUTO_COMMENT_TEXT);
 		if (autoBrowse || autoDigg || autoComment)
-			hookMethod("com.sup.android.detail.ui.j", "onPageSelected", int.class, new XC_MethodHook() {
+			//ui.j
+			//ui.DetailPagerFragment
+			hookMethod("com.sup.android.detail.ui.DetailPagerFragment", "onPageSelected", int.class, new XC_MethodHook() {
 				@Override
 				protected void afterHookedMethod(MethodHookParam param) {
 					Object feedCell = ((ArrayList) getObjectField(param.thisObject, "q")).get((int) param.args[0]);

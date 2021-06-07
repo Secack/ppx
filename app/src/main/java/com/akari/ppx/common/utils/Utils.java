@@ -102,10 +102,10 @@ public class Utils {
 			c.set(f, 0);
 	}
 
-	public static void donateByAlipay(Context context) {
+	public static void donateByAlipay(Context context,String uri) {
 		try {
 			Intent intent = new Intent(Intent.ACTION_VIEW);
-			intent.setData(Uri.parse(Const.ALIPAY_URI));
+			intent.setData(Uri.parse(uri));
 			context.startActivity(intent);
 		} catch (Exception ignored) {
 		}

@@ -31,7 +31,9 @@ public class BrowseHook extends SuperbHook {
 
 	@Override
 	protected void onHook(ClassLoader cl) {
-		hookMethod(AUTO_BROWSE_ENABLE, "com.sup.android.detail.ui.j", "onCreateView", LayoutInflater.class, ViewGroup.class, Bundle.class, new XC_MethodHook() {
+		//ui.j
+		//ui.DetailPagerFragment
+		hookMethod(AUTO_BROWSE_ENABLE, "com.sup.android.detail.ui.DetailPagerFragment", "onCreateView", LayoutInflater.class, ViewGroup.class, Bundle.class, new XC_MethodHook() {
 			@Override
 			protected void afterHookedMethod(MethodHookParam param) {
 				viewPager = getObjectField(param.thisObject, "A");

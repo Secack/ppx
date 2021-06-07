@@ -53,7 +53,7 @@ public class MiscHook extends SuperbHook {
 						showDialogXP(cl, context, "皮皮虾助手 " + BuildConfig.VERSION_NAME, "激活成功，欢迎使用！\n我很可爱，请给我钱️～️"
 								, "打赏一下", v -> {
 									saveCurVersion(sp);
-									Utils.donateByAlipay(context);
+									Utils.donateByAlipay(context,Const.ALIPAY_URI);
 								}
 								, "残忍拒绝", v -> saveCurVersion(sp));
 					executed[0] = true;

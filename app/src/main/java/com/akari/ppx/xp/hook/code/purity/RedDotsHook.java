@@ -10,7 +10,12 @@ public class RedDotsHook extends SuperbHook {
 	@Override
 	protected void onHook(ClassLoader cl) {
 		if (!XSP.get(Prefs.REMOVE_RED_DOTS)) return;
-		hookMethod("com.sup.superb.feedui.view.FeedTabFragment", "updateFollowFeedRedDot", boolean.class, int.class, int.class, new XC_MethodHook() {
+
+
+
+		//updateFollowFeedRedDot
+		//a
+		hookMethod("com.sup.superb.feedui.view.FeedTabFragment", "a", boolean.class, int.class, int.class, new XC_MethodHook() {
 			@Override
 			protected void beforeHookedMethod(MethodHookParam param) {
 				param.args[0] = false;

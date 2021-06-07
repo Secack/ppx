@@ -65,6 +65,7 @@ public enum Prefs {
 	FOLLOWING_COUNT("pref_following_count"),
 	POINT("pref_point"),
 	DONATE("pref_donate_by_alipay"),
+	DONATEEDIT("pref_donate_by_alipay_edit"),
 	JOIN_QQ_GROUP("pref_join_qq_group"),
 	HIDE_LAUNCHER_ICON("pref_hide_launcher_icon"),
 	SOURCE_CODE("pref_source_code");

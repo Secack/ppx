@@ -337,9 +337,36 @@
             android:title="@string/pref_point_title" />
     </PreferenceCategory>
 
+
+
+    <PreferenceCategory
+        android:key="@string/pref_about_edit"
+        android:title="@string/pref_about_title_edit"
+        >
+        <Preference
+            android:icon="@drawable/ic_info"
+            android:summary="@string/pref_adapt_summary"
+            android:title="@string/pref_adapt_title" />
+        <Preference
+            android:icon="@drawable/ic_info"
+            android:summary="@string/pref_about_author_summary_edit"
+            android:title="@string/pref_about_author_title_edit" />
+        <Preference
+            android:icon="@drawable/ic_alipay"
+            android:key="@string/pref_donate_by_alipay_edit"
+            android:summary="@string/pref_donate_by_alipay_summary_edit"
+            android:title="@string/pref_donate_by_alipay_title_edit" />
+
+
+    </PreferenceCategory>
+
+
+
     <PreferenceCategory
         android:key="@string/pref_about"
         android:title="@string/pref_about_title">
+
+
         <Preference
             android:icon="@drawable/ic_info"
             android:summary="@string/pref_about_author_summary"

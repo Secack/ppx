@@ -26,7 +26,9 @@ public class PlaySpeedHook extends SuperbHook {
 				}
 			}
 		});
-		hookMethod("com.sup.superb.video.controllerlayer.i", "z", new XC_MethodHook() {
+		//i
+		//j
+		hookMethod("com.sup.superb.video.controllerlayer.j", "z", new XC_MethodHook() {
 			@Override
 			protected void beforeHookedMethod(MethodHookParam param) {
 				entered[0] = true;

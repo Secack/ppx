@@ -62,8 +62,10 @@
     <string name="pref_followers_count">pref_followers_count</string>
     <string name="pref_following_count">pref_following_count</string>
     <string name="pref_point">pref_point</string>
+    <string name="pref_about_edit">pref_about_edit</string>
     <string name="pref_about">pref_about</string>
     <string name="pref_donate_by_alipay">pref_donate_by_alipay</string>
+    <string name="pref_donate_by_alipay_edit">pref_donate_by_alipay_edit</string>
     <string name="pref_join_qq_group">pref_join_qq_group</string>
     <string name="pref_hide_launcher_icon">pref_hide_launcher_icon</string>
     <string name="pref_source_code">pref_source_code</string>
@@ -179,6 +181,16 @@
     <string name="pref_point_title">积分</string>
 
     <string name="pref_about_title">关于</string>
+    <string name="pref_about_title_edit">关于修改者</string>
+    <string name="pref_adapt_title">适配</string>
+    <string name="pref_adapt_summary">皮皮虾官方版本3.5.0</string>
+
+    <string name="pref_about_author_title_edit">修改者</string>
+    <string name="pref_about_author_summary_edit">Skyhand（适配）</string>
+
+    <string name="pref_donate_by_alipay_title_edit">修改者捐赠</string>
+    <string name="pref_donate_by_alipay_summary_edit">下面的打赏支持原作者</string>
+
     <string name="pref_about_author_title">开发组</string>
     <string name="pref_about_author_summary">阿卡林、污帝多么寂寞（UI）</string>
     <string name="pref_donate_by_alipay_title">支付宝捐赠</string>

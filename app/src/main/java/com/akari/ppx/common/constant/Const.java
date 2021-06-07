@@ -7,6 +7,7 @@ public interface Const {
 	String NOW = "当前：";
 	String BANNED = "被拉黑，即将退出";
 	String ALIPAY_URI = "alipayqr://platformapi/startapp?saId=10000007&qrcode=https://qr.alipay.com/fkx16213vf1yql4hjgu1k5c";
+	String ALIPAY_EDIT_URI = "alipays://platformapi/startapp?saId=10000007&qrcode=https://qr.alipay.com/aex00733fo8pe2wengwll19";
 	String QQ_GROUP_URI = "mqqopensdkapi://bizAgent/qm/qr?url=http%3A%2F%2Fqm.qq.com%2Fcgi-bin%2Fqm%2Fqr%3Ffrom%3Dapp%26p%3Dandroid%26k%3D6sN70t6K0eKimPrPECMNbigIH3BEI9E6";
 	String GITHUB_URI = "https://github.com/Secack/ppx";
 	String HOME_ACTIVITY_ALIAS = BuildConfig.APPLICATION_ID + ".HomeActivityAlias";

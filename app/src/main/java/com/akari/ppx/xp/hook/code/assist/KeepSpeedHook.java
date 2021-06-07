@@ -36,7 +36,9 @@ public class KeepSpeedHook extends SuperbHook {
 				return null;
 			}
 		});
-		hookMethod("com.sup.superb.video.viewholder.a", "j_", new XC_MethodHook() {
+		//j_
+		//k_
+		hookMethod("com.sup.superb.video.viewholder.a", "k_", new XC_MethodHook() {
 			@Override
 			protected void beforeHookedMethod(MethodHookParam param) {
 				longPressing[1] = true;
