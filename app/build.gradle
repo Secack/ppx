@@ -14,12 +14,13 @@ buildscript {
 android {
     compileSdkVersion 29
 
+    def currentVersionCode = getVersionCode()
     defaultConfig {
         applicationId "com.akari.ppx"
         minSdkVersion 21
         targetSdkVersion 27
-        versionCode 176
-        versionName 's1.7.6'
+        versionCode currentVersionCode
+        versionName '1.7.7'
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
@@ -70,4 +71,14 @@ andResGuard {
     sevenzip {
         artifact = 'com.tencent.mm:SevenZip:1.2.21'
     }
+}
+
+def getVersionCode() {
+    def propsFile = file('version.properties')
+    def properties = new Properties()
+    properties.load(new FileInputStream(propsFile))
+    def vCode = properties['versionCode'].toInteger()
+    properties['versionCode'] = (++vCode).toString()
+    properties.store(propsFile.newWriter(), null)
+    return vCode
 }
