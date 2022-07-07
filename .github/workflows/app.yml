@@ -1,0 +1,78 @@
+name: Android CI
+
+on:
+  push:
+    branches: [ master ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    if: ${{ !startsWith(github.event.head_commit.message, '[skip ci]') }}
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+        with:
+          submodules: 'recursive'
+          fetch-depth: 0
+      - name: Set up JDK
+        uses: actions/setup-java@v1
+        with:
+          java-version: 11
+      - name: Write key
+        if: github.ref == 'refs/heads/master'
+        run: |
+          echo storePassword=${{ secrets.KEYSTORE_PASSWORD }} >> local.properties
+          echo keyAlias=${{ secrets.KEYSTORE_ALIAS }} >> local.properties
+          echo keyPassword='${{ secrets.KEYSTORE_ALIAS_PASSWORD }}' >> local.properties
+          echo storeFile=../key.jks >> local.properties
+          echo ${{ secrets.KEYSTORE }} | base64 --decode > key.jks
+      - name: Cache deps
+        uses: actions/cache@v2
+        with:
+          path: |
+            ~/.gradle/caches
+            ~/.gradle/wrapper
+            !~/.gradle/caches/build-cache-*
+          key: gradle-deps-app-${{ hashFiles('**/build.gradle.kts', '**/versions.properties') }}
+          restore-keys: |
+            gradle-deps
+      - name: Cache build
+        uses: actions/cache@v2
+        with:
+          path: |
+            ~/.gradle/caches/build-cache-*
+          key: gradle-builds-app-${{ github.sha }}
+          restore-keys: |
+            gradle-builds
+      - name: Build
+        id: build
+        run: |
+          echo 'org.gradle.caching=true' >> gradle.properties
+          echo 'org.gradle.parallel=true' >> gradle.properties
+          echo 'org.gradle.vfs.watch=true' >> gradle.properties
+          echo 'org.gradle.jvmargs=-Xmx4096m' >> gradle.properties
+          ./gradlew :app:validateSigningDebug
+          ./gradlew :app:assembleRelease
+          echo "::set-output name=releaseName::`ls app/build/outputs/apk/release/*.apk | awk -F '(/|.apk)' '{print $6}'`"
+      - name: Upload artifact
+        if: success()
+        uses: actions/upload-artifact@v2
+        with:
+          name: ${{ steps.build.outputs.releaseName }}
+          path: "app/build/outputs/apk/release/*.apk"
+      - name: Post to channel
+        env:
+          CHANNEL_ID: ${{ secrets.CHANNEL_ID }}
+          BOT_TOKEN: ${{ secrets.BOT_TOKEN }}
+          COMMIT_MESSAGE: |+
+            New push to github\!
+            ```
+            ${{ github.event.head_commit.message }}
+            ```
+            See commit detail [here](${{ github.event.head_commit.url }})
+            Snapshot apk is attached \(unsupported by TAICHI\)
+        run: |
+          export FILE=$(ls app/build/outputs/apk/release/*.apk)
+          ESCAPED=`python3 -c 'import json,os,urllib.parse; print(urllib.parse.quote(json.dumps(os.environ["COMMIT_MESSAGE"])))'`
+          curl -v "https://api.telegram.org/bot${BOT_TOKEN}/sendMediaGroup?chat_id=${CHANNEL_ID}&media=%5B%7B%22type%22:%22document%22,%20%22media%22:%22attach://release%22,%22parse_mode%22:%22MarkdownV2%22,%22caption%22:${ESCAPED}%7D%5D" -F release="@$FILE"
