@@ -61,7 +61,7 @@ class AchievementHook : SwitchHook("show_register_escape_time") {
                             param.args[0],
                             param.args[1].callMethodAs<String>("getHost").replace('=', ':')
                         )
-                    showSystemToast("已复制到剪贴板")
+                    showStickyToast("已复制到剪贴板")
                 }
                 else -> param.invokeOriginalMethod()
             }

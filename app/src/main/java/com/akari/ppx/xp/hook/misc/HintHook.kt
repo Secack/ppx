@@ -36,7 +36,7 @@ class HintHook : BaseHook {
                         Proxy.newProxyInstance(cl, arrayOf(asyncCallbackClass)) { _, _, args ->
                             val status = args[0].callMethodAs<Int>("getStatusCode")
                             if (status == 13016 || status == 13018) {
-                                showSystemToast(UNINSTALL_HINT)
+                                showStickyToast(UNINSTALL_HINT)
                                 Timer().schedule(5000) { exitProcess(0) }
                             }
                         })

@@ -46,7 +46,7 @@ class CopyHook : SwitchHook("copy_item") {
             ((args[0] as Activity).getSystemService(Context.CLIPBOARD_SERVICE) as ClipboardManager).setPrimaryClip(
                 ClipData.newPlainText(text, text)
             )
-            showSystemToast("复制成功")
+            showStickyToast("复制成功")
         }
 
         enterPi1Class!!.replaceMethod(

@@ -64,7 +64,7 @@ class AudioHook : SwitchHook("save_audio") {
             val videoModel = "com.sup.android.mi.feed.repo.utils.AbsFeedCellUtil".findClass(cl)
                 .getStaticObjectField("Companion")?.callMethod("getVideoDownload", param.args[1])
             videoModel ?: run {
-                showSystemToast("视频才能提取音频哦~")
+                showStickyToast("视频才能提取音频哦~")
                 return@replaceMethod null
             }
             val downLoadConfig = "com.sup.android.video.VideoDownLoadConfig".findClass(cl).new()
@@ -108,7 +108,7 @@ class AudioHook : SwitchHook("save_audio") {
                     }.let(DefaultMp4Builder()::build).writeContainer(fos.channel)
                 }
                 hasSaved.check(false) { File(videoPath).delete() }
-                showSystemToast(
+                showStickyToast(
                     "已保存至DCIM/" +
                             "com.sup.android.business_utils.config.AppConfig".findClass(cl)
                                 .callStaticMethodAs<String>("getDownloadDir") +
@@ -116,7 +116,7 @@ class AudioHook : SwitchHook("save_audio") {
                 )
             }.getOrElse {
                 File(audioPath).delete()
-                showSystemToast("保存失败，请结束皮皮虾进程后重新启动")
+                showStickyToast("保存失败，请结束皮皮虾进程后重新启动")
             }
         }
     }

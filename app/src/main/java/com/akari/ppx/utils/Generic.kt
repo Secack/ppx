@@ -37,6 +37,11 @@ fun showSystemToast(text: String) {
         .callStaticMethod("showSystemToast", ctx, text, 0, 0)
 }
 
+fun showStickyToast(text: String, duration: Int = 3000) {
+    "com.sup.android.uikit.base.ToastManager".findClass(cl)
+        .callStaticMethod("showStickyToast", text, duration)
+}
+
 fun showDialog(
     context: Activity,
     title: String,
